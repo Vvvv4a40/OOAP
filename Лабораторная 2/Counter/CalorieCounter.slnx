@@ -1,4 +1,3 @@
 <Solution>
-  <Project Path="CalorieCounter.Tests/CalorieCounter.Tests.csproj" />
   <Project Path="CalorieCounter/CalorieCounter.csproj" />
 </Solution>
