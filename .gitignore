@@ -8,3 +8,12 @@
 ~$*
 *.tmp
 *.bak
+.$*.bkp
+.$*.dtmp
+
+# Сборка .NET и настройки IDE.
+bin/
+obj/
+.vs/
+.idea/
+*.user
