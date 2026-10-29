@@ -48,7 +48,6 @@ class Program
             Console.WriteLine("Название не может быть пустым");
             return;
         }
-        // Dishes look products up by name, so two products with one name would be ambiguous.
         if (products.Exists(product => product.Name == name))
         {
             Console.WriteLine($"Продукт «{name}» уже есть");
@@ -100,7 +99,7 @@ class Program
             Console.WriteLine("Блюдо без продуктов не создано");
             return;
         }
-        // The ready weight is measured separately: water boils away, so it is not the sum of the ingredients.
+
         double readyMassG = AskPositive("Вес готового блюда, г: ");
 
         CookedBatch dish = handler.CreateBatch(name, readyMassG, composition);

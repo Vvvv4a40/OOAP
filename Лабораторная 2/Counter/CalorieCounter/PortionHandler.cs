@@ -32,7 +32,6 @@ public class PortionHandler
         }
         else
         {
-            // An earlier preview must not stay confirmable after a failed one.
             preview = null;
         }
         return preview;
@@ -45,7 +44,6 @@ public class PortionHandler
             return false;
         }
         diary.AddPortion(preview);
-        // The preview is used up, so a second Confirm does not add the same portion again.
         preview = null;
         return true;
     }
